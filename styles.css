@@ -1,5 +1,9 @@
+body {
+    background-image: url('/images/background.png');
+}
+
 h1 {
-    color: gray;
+    color: lightgray;
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
     text-align: center;
