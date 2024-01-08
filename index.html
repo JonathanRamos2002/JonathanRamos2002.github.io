@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jonathan Ramos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono&family=Permanent+Marker&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <h1>Hello World! I am a Computer Science and Data Science double major at Loyola University Maryland. 
-      I am actively developing my skills and I hope to become a software engineer someday!</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Jonathan Ramos</a></li>
+        <li class="hideOnMobile"><a href="#">Resume</a></li>
+        <li class="hideOnMobile"><a href="#">Projects</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+      
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+      }
+    </script>
+
   </body>
 </html>
